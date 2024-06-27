@@ -1,8 +1,10 @@
 import React from "react";
+import Cardlist from "./cardlist";
 import newslogorm from "./newslogorm.png"
 export default function Navbar(){
     return(
-        <div className="flex justify-between items-center bg-[#f3faff] pops shadow-md mt-3">
+        <div>
+        <div className="flex justify-between items-center bg-[#f3faff] pops shadow-md mt-3 fixed top-[0] left-[0] right-[0] ">
             <a>
                 <img src={newslogorm} className="w-[200px]" alt="logo"/>
             </a>
@@ -25,6 +27,10 @@ export default function Navbar(){
                 <button className="p-2 bg-blue-600 w-[70px] h-[40px] rounded text-center text-white hover:bg-blue-700">Search</button>
             </div>
         </div>
-        
+        <div className="mt-8">
+        <Cardlist/>
+
+        </div>
+        </div>
     );
 }
