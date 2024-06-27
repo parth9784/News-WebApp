@@ -1,0 +1,24 @@
+.popr {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .pops {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body{
+  font-family:"Poppins", sans-serif ;
+  color:var(--primary-text-color)
+}
+:root{
+  --primary-text-color:#183b56;
+  --seconday-text-color:#577592;
+  --accent-color:#2294ed;
+  --accent-color-dark:#1d69a3;
+}
+
+
