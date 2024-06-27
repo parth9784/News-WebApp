@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./navbar";
-import Newscard from "./newscard";
-
 function App() {
   return (
     <div className="">
