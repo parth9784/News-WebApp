@@ -20,5 +20,13 @@ body{
   --accent-color:#2294ed;
   --accent-color-dark:#1d69a3;
 }
+@media(max-width:740px){
+  .Nav .Search{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3px;
+  }
+}
 
 

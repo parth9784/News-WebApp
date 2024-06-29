@@ -38,7 +38,7 @@ export default function Navbar(){
 
   return (
     <div>
-      <div className="flex justify-between items-center flex-wrap bg-[#f3faff] pops shadow-md mt-3 fixed top-[0] left-[0] right-[0] ">
+      <div className=" Nav flex justify-between items-center flex-wrap bg-[#f3faff] pops shadow-md mt-3 fixed top-[0] left-[0] right-[0] mt-3 ">
         <Link to={"/"}>
           <img src={newslogorm} className="w-[200px]" alt="logo" />
         </Link>
@@ -49,8 +49,8 @@ export default function Navbar(){
             <li onClick={() => handleNav("Politics")} className="hover:text-[#577592] cursor-pointer">Politics</li>
           </ul>
         </div>
-        <div className="flex md:gap-2 pr-5 items-center popr mt-2 ml-2">
-          <div className="relative h-11 w-full min-w-[200px]">
+        <div className=" Search flex md:gap-2 pr-5 items-center popr mt-2 ml-2">
+          <div className=" relative h-11 w-full min-w-[200px]">
             <input id="searchbox" placeholder="eg. Technology"
                    className="peer h-full w-[95px] sm:w-[120px] md:w-[135px] border-b border-blue-gray-200 bg-transparent pt-4 pb-1.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border-blue-gray-200 focus:border-gray-900 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50" />
             <label
