@@ -1,7 +1,17 @@
 import axios from 'axios';
-export default function Newsdata(query){
-    const apikey="3103bc160fe142c08a96ba4fe12107fc"
-    const url="https://newsapi.org/v2/everything?q="
-    // ${url}${query}&apikey=${apikey}
-    return axios.get(`${url}${query}&apikey=${apikey}`);
+
+export default async function Newsdata(query) {
+    try {
+        let response;
+        if(query){
+            response = await axios.get(`https://news-api-server-1.onrender.com/getnews/${query}`);
+        }
+        else{
+             response= await axios.get(`https://news-api-server-8z2i.onrender.com/getnews/india`);
+        }
+       
+        return response;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+    }
 }

@@ -14,7 +14,8 @@ export default function Navbar(){
   useEffect(() => {
     const fetchData = async () => { 
       const response = await Newsdata(q);
-        upalldata(response.data.articles);
+      // console.log(response.data)
+        upalldata(response.data);
         uploading(false);
     }
     fetchData();
@@ -31,16 +32,16 @@ export default function Navbar(){
     if(loading){
         return <Loading/>
     }
-    // console.log(alldata1)
     if(alldata1.length===0){
         return <NotFound/>
     }
+
 
   return (
     <div>
       <div className=" Nav flex justify-between items-center flex-wrap bg-[#f3faff] pops shadow-md mt-3 fixed top-[0] left-[0] right-[0] mt-3 ">
         <Link to={"/"}>
-          <img src={newslogorm} className="w-[200px]" alt="logo" />
+          <img  src={newslogorm} className="w-[200px]" alt="logo" />
         </Link>
         <div className="">
           <ul className="flex gap-7">
