@@ -5,8 +5,7 @@ export default function NotFound() {
     const navigate = useNavigate();
 
     function handleClick() {
-        console.log("clicked home");
-        navigate('/');
+         window.location.reload();
     }
 
     return (
